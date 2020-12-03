@@ -1,4 +1,5 @@
-import java.util.Locale;
+package br.com.java.estrutura_sequencial;
+
 import java.util.Scanner;
 
 /***
@@ -7,19 +8,9 @@ import java.util.Scanner;
  *
  */
 
-public class Main {
+public class EntradaDados {
 
 	public static void main(String[] args) {
-
-		double x = 10.35784;
-		Locale.setDefault(Locale.US);
-		System.out.println(x);
-		System.out.printf("%.2f%n", x);
-		System.out.printf("%.4f%n", x);
-		System.out.println("O valor de x é: " + x);
-		System.out.printf("O valor de x é: %.2f ", x);
-
-		System.out.println("\n---------------------\n");
 
 		Scanner sc = new Scanner(System.in);
 
@@ -54,6 +45,7 @@ public class Main {
 		System.out.println(s3);
 
 		sc.close();
+
 	}
 
 }
