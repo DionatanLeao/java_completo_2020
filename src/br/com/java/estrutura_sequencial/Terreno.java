@@ -3,6 +3,12 @@ package br.com.java.estrutura_sequencial;
 import java.util.Locale;
 import java.util.Scanner;
 
+/***
+ * 
+ * @author dionatan
+ *
+ */
+
 public class Terreno {
 
 	public static void main(String[] args) {

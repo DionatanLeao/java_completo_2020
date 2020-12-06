@@ -2,6 +2,12 @@ package br.com.java.estrutura_repetitivas;
 
 import java.util.Scanner;
 
+/***
+ * 
+ * @author dionatan
+ *
+ */
+
 public class While {
 
 	public static void main(String[] args) {
