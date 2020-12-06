@@ -15,7 +15,6 @@ public class OperadorTernario {
 		 */
 
 		double preco = 34.5;
-		@SuppressWarnings("unused")
 		double desconto;
 
 		if (preco < 20.0) {
@@ -24,9 +23,12 @@ public class OperadorTernario {
 			desconto = preco * 0.05;
 		}
 
+		System.out.println(desconto);
+
 		double preco2 = 34.5;
-		@SuppressWarnings("unused")
 		double desconto2 = (preco2 < 20.0) ? preco2 * 0.1 : preco2 * 0.05;
+
+		System.out.println(desconto2);
 	}
 
 }
