@@ -34,6 +34,18 @@ public class Program {
 			saac.updateBalance();
 			System.out.println("Update!");
 		}
+		
+		Account acc1 = new Account(0005, "Jonh", 1000.0);
+		acc1.withDraw(200.0);
+		System.out.println(acc1.getBalance());
+		
+		Account acc4 = new SavingsAccount(0006, "Robert", 1000.0, 0.01);
+		acc4.withDraw(200.0);
+		System.out.println(acc4.getBalance());
+		
+		Account acc5 = new BusinessAccount(0007, "Willians", 1000.0, 500.0);
+		acc5.withDraw(200.0);
+		System.out.println(acc5.getBalance());
 	}
 
 }

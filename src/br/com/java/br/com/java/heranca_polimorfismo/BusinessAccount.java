@@ -31,7 +31,10 @@ public class BusinessAccount extends Account {
 		if (amount <= loanLimit) {
 			balance += amount - 10.0;
 		}
-
 	}
-
+	
+	public void	withDraw(double amount) {
+		super.withDraw(amount);
+		balance -= 2.0;
+	}
 }
