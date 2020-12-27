@@ -46,6 +46,14 @@ public class Program {
 		Account acc5 = new BusinessAccount(0007, "Willians", 1000.0, 500.0);
 		acc5.withDraw(200.0);
 		System.out.println(acc5.getBalance());
+		
+		Account x = new Account(1020, "Alex", 1000.0);
+		Account y = new SavingsAccount(1023, "Mary", 1000.0, 0.01);
+		x.withDraw(50.00);
+		y.withDraw(50.00);
+		
+		System.out.println(x.getBalance());
+		System.out.println(y.getBalance());
 	}
 
 }
