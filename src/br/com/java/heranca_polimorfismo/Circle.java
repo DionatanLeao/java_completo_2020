@@ -1,4 +1,4 @@
-package br.com.java.br.com.java.heranca_polimorfismo;
+package br.com.java.heranca_polimorfismo;
 
 /***
  * 

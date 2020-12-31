@@ -1,4 +1,4 @@
-package br.com.java.br.com.java.enumeracoes_composicao;
+package br.com.java.enumeracoes_composicao;
 
 import java.util.ArrayList;
 import java.util.Calendar;
