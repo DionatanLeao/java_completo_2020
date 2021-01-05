@@ -18,7 +18,7 @@ public class TryCatch {
 	}
 	
 	public static void method1() {
-		System.out.println("***METHOD1 START***");
+		System.out.println("***METHOD1 START***");	
 		method2();
 		System.out.println("***METHOD1 END***");
 	}
