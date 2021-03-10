@@ -1,4 +1,4 @@
-package br.com.java.orientacao_objeto;
+package br.com.java.orientacao_object;
 
 import java.util.Locale;
 import java.util.Scanner;

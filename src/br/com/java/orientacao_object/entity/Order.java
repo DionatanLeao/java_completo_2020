@@ -1,4 +1,4 @@
-package br.com.java.orientacao_objeto.entites;
+package br.com.java.orientacao_object.entity;
 
 import java.util.Date;
 
