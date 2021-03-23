@@ -13,38 +13,20 @@ import java.io.IOException;
 public class FileReaderBufferedReader {
 
 	public static void main(String[] args) {
-		
+
 		String path = "/home/dionatan/workspace/working-files-java/teste.txt";
-		
-		FileReader fr = null;
-		BufferedReader br = null;
-		
-		try {
-			fr = new FileReader(path);
-			br = new BufferedReader(fr);
-			
+
+		try (BufferedReader br = new BufferedReader(new FileReader(path))) { 
 			String line = br.readLine();
-			
+
 			while (line != null) {
 				System.out.println(line);
 				line = br.readLine();
 			}
-		}	catch (IOException e) {
+		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
-		} finally {
-			try {
-				if(fr != null) {
-					fr.close();
-				}
-				if(br != null) {
-					br.close();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}		
+		}
 
 	}
 
 }
-
