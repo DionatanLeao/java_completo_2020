@@ -1,6 +1,7 @@
 package br.com.java.interfaces.service;
 
 import br.com.java.interfaces.entities.CarRental;
+import br.com.java.interfaces.entities.Invoice;
 
 /***
  * 
@@ -10,35 +11,32 @@ import br.com.java.interfaces.entities.CarRental;
 
 public class RentalService {
 
-	private Double pricePerHour;
 	private Double pricePerDay;
+	private Double pricePerHour;
 
-	private BrazilTaxService brazilTaxService;
+	private TaxService taxService;
 
-	public RentalService(Double pricePerHour, Double pricePerDay, BrazilTaxService brazilTaxService) {
-		this.pricePerHour = pricePerHour;
+	public RentalService(Double pricePerDay, Double pricePerHour, TaxService taxService) {
 		this.pricePerDay = pricePerDay;
-		this.brazilTaxService = brazilTaxService;
-	}
-
-	public Double getPricePerHour() {
-		return pricePerHour;
-	}
-
-	public void setPricePerHour(Double pricePerHour) {
 		this.pricePerHour = pricePerHour;
-	}
-
-	public Double getPricePerDay() {
-		return pricePerDay;
-	}
-
-	public void setPricePerDay(Double pricePerDay) {
-		this.pricePerDay = pricePerDay;
+		this.taxService = taxService;
 	}
 
 	public void processInvoice(CarRental carRental) {
+		long t1 = carRental.getStart().getTime();
+		long t2 = carRental.getFinish().getTime();
+		double hours = (double) (t2 - t1) / 1000 / 60 / 60;
 
+		double basicPayment;
+		if (hours <= 12.0) {
+			basicPayment = pricePerHour * Math.ceil(hours);
+		} else {
+			basicPayment = pricePerDay * Math.ceil(hours / 24);
+		}
+
+		double tax = taxService.tax(basicPayment);
+
+		carRental.setInvoice(new Invoice(basicPayment, tax));
 	}
 
 }

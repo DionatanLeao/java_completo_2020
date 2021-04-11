@@ -20,11 +20,10 @@ public class CarRental {
 	public CarRental() {
 	}
 
-	public CarRental(Date start, Date finish, Vehicle vehicle, Invoice invoice) {
+	public CarRental(Date start, Date finish, Vehicle vehicle) {
 		this.start = start;
 		this.finish = finish;
 		this.vehicle = vehicle;
-		this.invoice = invoice;
 	}
 
 	public Date getStart() {
