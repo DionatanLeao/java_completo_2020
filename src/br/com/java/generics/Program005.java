@@ -30,7 +30,7 @@ public class Program005 {
 
 	}
 
-	private static double totalArea(List<?> list) {
+	private static double totalArea(List<? extends Shape> list) {
 		double sum = 0.0;
 		for (Shape s : list) {
 			sum += s.area();
