@@ -4,6 +4,12 @@ import java.util.Comparator;
 
 import br.com.java.funcional_lambda.entities.Product;
 
+/***
+ * 
+ * @author dionatan
+ *
+ */
+
 public class MyComparator implements Comparator<Product> {
 
 	@Override
