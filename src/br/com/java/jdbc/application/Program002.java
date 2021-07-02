@@ -5,7 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import br.com.java.jdbc.DB;
+import br.com.java.jdbc.db.DB;
 
 /***
  * 

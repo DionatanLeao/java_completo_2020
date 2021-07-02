@@ -2,7 +2,7 @@ package br.com.java.jdbc.application;
 
 import java.sql.Connection;
 
-import br.com.java.jdbc.DB;
+import br.com.java.jdbc.db.DB;
 
 /***
  * 

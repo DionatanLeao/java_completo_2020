@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 
-import br.com.java.jdbc.DB;
+import br.com.java.jdbc.db.DB;
 
 /***
  * 
