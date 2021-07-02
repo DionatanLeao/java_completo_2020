@@ -1,8 +1,8 @@
-package br.com.java.jdbc1.application;
+package br.com.java.jdbc.application;
 
 import java.sql.Connection;
 
-import br.com.java.jdbc1.DB;
+import br.com.java.jdbc.DB;
 
 /***
  * 
@@ -10,7 +10,7 @@ import br.com.java.jdbc1.DB;
  *
  */
 
-public class Program {
+public class Program001 {
 
 	public static void main(String[] args) {
 		

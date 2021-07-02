@@ -1,11 +1,11 @@
-package br.com.java.jdbc2.application;
+package br.com.java.jdbc.application;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import br.com.java.jdbc2.DB;
+import br.com.java.jdbc.DB;
 
 /***
  * 
@@ -13,7 +13,7 @@ import br.com.java.jdbc2.DB;
  *
  */
 
-public class Program {
+public class Program002 {
 
 	public static void main(String[] args) {
 

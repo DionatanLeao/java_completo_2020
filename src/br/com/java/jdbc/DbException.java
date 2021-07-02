@@ -1,4 +1,4 @@
-package br.com.java.jdbc2;
+package br.com.java.jdbc;
 
 /***
  * 
